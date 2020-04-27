@@ -8,26 +8,26 @@ public class GameOfLife {
     final static int DIM2 = 12;
 
     // liefert eine zufällig initialisierte Welt
-    public static boolean[][] initWelt() {
+    public static boolean[][] initWorld() {
         return null;
     }
 
     // gibt die aktuelle Welt aus
-    public static void zeigeWelt(boolean[][] welt) {}
+    public static void showWorld(boolean[][] world) {}
 
     // wendet die 4 Regeln an und gibt die Folgegeneration wieder zurück
-    public static boolean[][] wendeRegelnAn(boolean[][] welt){
+    public static boolean[][] applyRules(boolean[][] world){
         return null;
     }
 
     public static void main(String[] args) {
-        boolean[][] welt = initWelt();
+        boolean[][] world = initWorld();
         System.out.println("Startkonstellation");
-        zeigeWelt(welt);
+        showWorld(world);
         for (int i = 1; i <= 100; i++) {
-            welt = wendeRegelnAn(welt);
+            world = applyRules(world);
             System.out.println("Generation " + i);
-            zeigeWelt(welt);
+            showWorld(world);
         }
     }
 
