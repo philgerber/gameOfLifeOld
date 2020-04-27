@@ -1,5 +1,8 @@
 package ch.school;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class GameOfLife {
 
 
