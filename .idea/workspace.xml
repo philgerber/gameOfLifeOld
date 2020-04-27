@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="45cb5cba-3779-47e2-86e7-ccdf0fb1868f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gameOfLife/ch/school/GameOfLife.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gameOfLife/ch/school/GameOfLife.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/school/GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/school/GameOfLife.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587640571844</updated>
       <workItem from="1587640576267" duration="36000" />
-      <workItem from="1587981305242" duration="1222000" />
+      <workItem from="1587981305242" duration="1697000" />
     </task>
     <servers />
   </component>
@@ -62,25 +63,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="351" key="GridCell.Tab.0.bottom" timestamp="1587985510216">
+    <state width="1638" height="240" key="GridCell.Tab.0.bottom" timestamp="1587986027196">
       <screen x="487" y="1463" width="1680" height="952" />
     </state>
-    <state width="1638" height="351" key="GridCell.Tab.0.bottom/487.1463.1680.952/0.23.2560.1417@487.1463.1680.952" timestamp="1587985510216" />
-    <state width="1638" height="351" key="GridCell.Tab.0.center" timestamp="1587985510215">
+    <state width="1638" height="240" key="GridCell.Tab.0.bottom/487.1463.1680.952/0.23.2560.1417@487.1463.1680.952" timestamp="1587986027196" />
+    <state width="1638" height="240" key="GridCell.Tab.0.center" timestamp="1587986027195">
       <screen x="487" y="1463" width="1680" height="952" />
     </state>
-    <state width="1638" height="351" key="GridCell.Tab.0.center/487.1463.1680.952/0.23.2560.1417@487.1463.1680.952" timestamp="1587985510215" />
-    <state width="1638" height="351" key="GridCell.Tab.0.left" timestamp="1587985510214">
+    <state width="1638" height="240" key="GridCell.Tab.0.center/487.1463.1680.952/0.23.2560.1417@487.1463.1680.952" timestamp="1587986027195" />
+    <state width="1638" height="240" key="GridCell.Tab.0.left" timestamp="1587986027195">
       <screen x="487" y="1463" width="1680" height="952" />
     </state>
-    <state width="1638" height="351" key="GridCell.Tab.0.left/487.1463.1680.952/0.23.2560.1417@487.1463.1680.952" timestamp="1587985510214" />
-    <state width="1638" height="351" key="GridCell.Tab.0.right" timestamp="1587985510215">
+    <state width="1638" height="240" key="GridCell.Tab.0.left/487.1463.1680.952/0.23.2560.1417@487.1463.1680.952" timestamp="1587986027195" />
+    <state width="1638" height="240" key="GridCell.Tab.0.right" timestamp="1587986027196">
       <screen x="487" y="1463" width="1680" height="952" />
     </state>
-    <state width="1638" height="351" key="GridCell.Tab.0.right/487.1463.1680.952/0.23.2560.1417@487.1463.1680.952" timestamp="1587985510215" />
+    <state width="1638" height="240" key="GridCell.Tab.0.right/487.1463.1680.952/0.23.2560.1417@487.1463.1680.952" timestamp="1587986027196" />
+    <state x="1125" y="1668" key="RollbackChangesDialog" timestamp="1587985893442">
+      <screen x="487" y="1463" width="1680" height="952" />
+    </state>
+    <state x="1125" y="1668" key="RollbackChangesDialog/487.1463.1680.952/0.23.2560.1417@487.1463.1680.952" timestamp="1587985893442" />
     <state x="976" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1587640581391">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="976" y="525" key="com.intellij.ide.util.TipDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1587640581391" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1587985887403">
+      <screen x="487" y="1463" width="1680" height="952" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/487.1463.1680.952/0.23.2560.1417@487.1463.1680.952" timestamp="1587985887403" />
   </component>
 </project>

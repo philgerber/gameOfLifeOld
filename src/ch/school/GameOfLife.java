@@ -13,11 +13,23 @@ public class GameOfLife {
     }
 
     // gibt die aktuelle Welt aus
-    public static void showWorld(boolean[][] world) {}
+    public static void showWorld(boolean[][] world) {
+    }
 
     // wendet die 4 Regeln an und gibt die Folgegeneration wieder zurück
-    public static boolean[][] applyRules(boolean[][] world){
+    public static boolean[][] applyRules(boolean[][] world) {
         return null;
+    }
+
+    public static int numberOfNeighbors(boolean[][] world, int x, int y) {
+        int ret = 0;
+        for (int i = x - 1; i <= x + 1; ++i)
+            for (int j = y - 1; j <= y + 1; ++j)
+                if (world[i][j])
+                    ret += 1;
+        // einen Nachbarn zuviel mitgezählt? if (world[x][y])
+        ret -= 1;
+        return ret;
     }
 
     public static void main(String[] args) {
