@@ -1,50 +1,70 @@
-package ch.school;
-
-import java.lang.reflect.Array;
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
-public class GameOfLife {
+public class GameOfLife extends JFrame {
 
+    private int[][] cellsGrid;
+    private static final Random rnd = new Random();
 
-    // global definierte Konstanten für die beiden Dimensionen final static int DIM1 = 12;
-    final static int DIM1 = 12;
-    final static int DIM2 = 12;
+    private static final Dimension DEFAULT_WINDOW_SIZE = new Dimension(1200, 1000);
+    private static final Dimension MINIMUM_WINDOW_SIZE = new Dimension(800, 800);
 
-    // liefert eine zufällig initialisierte Welt
-    public static boolean[][] initWorld() {
-        return null;
+    public GameOfLife() {
+        // showSettingDialog();
+        // JButton button = new JButton("Drück mich");
+        // game.add(button);
+
+        init();
     }
-
-    // gibt die aktuelle Welt aus
-    public static void showWorld(boolean[][] world) {
-    }
-
-    // wendet die 4 Regeln an und gibt die Folgegeneration wieder zurück
-    public static boolean[][] applyRules(boolean[][] world) {
-        return null;
-    }
-
-    public static int numberOfNeighbors(boolean[][] world, int x, int y) {
-        int ret = 0;
-        for (int i = x - 1; i <= x + 1; ++i)
-            for (int j = y - 1; j <= y + 1; ++j)
-                if (world[i][j])
-                    ret += 1;
-        // einen Nachbarn zuviel mitgezählt? if (world[x][y])
-        ret -= 1;
-        return ret;
-    }
-
     public static void main(String[] args) {
-        boolean[][] world = initWorld();
-        System.out.println("Startkonstellation");
-        showWorld(world);
-        for (int i = 1; i <= 100; i++) {
-            world = applyRules(world);
-            System.out.println("Generation " + i);
-            showWorld(world);
-        }
+
+        JFrame game = new GameOfLife();
+
     }
 
+    private void init() {
+        JButton b1 = new JButton();
+        b1.setVisible(true);
+        b1.setText("Start");
+
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setTitle("Game of Life");
+        setSize(DEFAULT_WINDOW_SIZE);
+        setMinimumSize(MINIMUM_WINDOW_SIZE);
+        setLocation((Toolkit.getDefaultToolkit().getScreenSize().width - getWidth()) / 2,
+                (Toolkit.getDefaultToolkit().getScreenSize().height - getHeight()) / 2);
+        setVisible(true);
+
+        getContentPane().setLayout(new BorderLayout());
+        List<JComponent> components = new ArrayList<>();
+        components.add(b1);
+        getContentPane().add(getTopPanel(components), BorderLayout.NORTH);
+        getContentPane().add(new Game(20), BorderLayout.CENTER);
+
+        pack();
+
+        invalidate();
+        repaint();
+    }
+
+    private void showSettingDialog() {
+        SettingsDialog dialog = new SettingsDialog();
+        dialog.setSize(500, 500);
+        dialog.setLocationRelativeTo(null);
+        dialog.setVisible(true);
+    }
+
+
+    private JPanel getTopPanel(List<JComponent> topComponents) {
+        JPanel topPanel = new JPanel();
+        topPanel.setLayout(new FlowLayout());
+        for (JComponent topComponent : topComponents) {
+            topPanel.add(topComponent);
+        }
+        return topPanel;
+    }
 
 }
