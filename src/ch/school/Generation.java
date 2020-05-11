@@ -10,6 +10,10 @@ public class Generation {
         init(size);
     }
 
+    public static void nextGen() {
+        
+    }
+
     public Cell[][] getCells() {
         return cells;
     }

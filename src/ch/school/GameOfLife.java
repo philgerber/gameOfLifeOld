@@ -11,6 +11,7 @@ public class GameOfLife extends JFrame {
 
     private static final Dimension DEFAULT_WINDOW_SIZE = new Dimension(1200, 1000);
     private static final Dimension MINIMUM_WINDOW_SIZE = new Dimension(800, 800);
+    private static Clock clock = new Clock();
 
     public GameOfLife() {
         // showSettingDialog();
@@ -22,6 +23,7 @@ public class GameOfLife extends JFrame {
     public static void main(String[] args) {
 
         JFrame game = new GameOfLife();
+        Generation gen = new Generation(20);
 
     }
 

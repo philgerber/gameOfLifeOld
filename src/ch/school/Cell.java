@@ -1,6 +1,7 @@
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
@@ -23,14 +24,18 @@ public class Cell extends JPanel implements MouseListener {
         return alive;
     }
 
-    public void setAlive(boolean alive) {
-        this.alive = alive;
-        this.setBackground(Color.green);
+    public void changeState() {
+        this.alive = !alive;
+        if (alive) {
+            this.setBackground(Color.green);
+        } else {
+            this.setBackground(Color.white);
+        }
     }
 
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
-        setAlive(true);
+        changeState();
     }
 
     @Override
